@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Tracking App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Header">
+          <h1>Book Tracking App</h1>
+          <form id="bookForm">
+            <div class="formContainer">
+              <label for="title">Title:</label>
+              <input type="text" id="title" name="title" required />
+            </div>
+            <div class="formContainer">
+              <label for="author">Author:</label>
+              <input type="text" id="author" name="author" required />
+            </div>
+            <div class="formContainer">
+              <label for="pages">Pages:</label>
+              <input type="number" id="pages" name="pages" required />
+            </div>
+            <div class="formContainer">
+              <label for="read">Read:</label>
+              <input type="checkbox" id="read" name="read" />
+            </div>
+            <button type="submit">Add Book</button>
+          </form>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+          </tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
